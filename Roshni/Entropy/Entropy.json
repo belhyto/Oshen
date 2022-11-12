@@ -35,7 +35,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/12/2022 14:55:02",
+  "HeaderLastSavedDateTimeUTC": "11/12/2022 18:56:05",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -110,15 +110,15 @@
     "AnalysisLoadTime": 0.2100921,
     "ControlCount": {
       "button": 1,
-      "dropdown": 1,
-      "image": 4,
-      "label": 8,
-      "rectangle": 2,
-      "screen": 4,
-      "slider": 1,
-      "text": 6,
+      "dropdown": 2,
+      "image": 5,
+      "label": 13,
+      "rectangle": 4,
+      "screen": 5,
+      "slider": 2,
+      "text": 7,
       "timer": 1,
-      "toggleSwitch": 1
+      "toggleSwitch": 2
     },
     "DeserializationLoadTime": 1.0245414,
     "ErrorCount": 0
