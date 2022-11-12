@@ -1,0 +1,128 @@
+MainScreen As screen:
+    Fill: =RGBA(207, 241, 252, 0.35)
+
+    imgMapControl As image:
+        Height: =1136
+        Image: |-
+            ="https://maps.googleapis.com/maps/api/staticmap?center=" & EncodeUrl(txtLocation.Text) & "&zoom="& slZoom.Value & "&size=" & txtImageWidth & "x" & txtImageHeight & "&maptype=" & drpGoogleMaptypes.Selected.Value & "&markers=color:purple%7Clabel:O%7C"& EncodeUrl(txtLocation.Text)& "&key="&txtGoogleMapsKey.Text&"&map_id="&txtGoogleMapsID.Text
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        ZIndex: =1
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(56, 96, 178, 0.55)
+        Height: =200
+        Width: =640
+        Y: =936
+        ZIndex: =2
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(56, 96, 178, 0.33)
+        Height: =218
+        Width: =640
+        ZIndex: =3
+
+    txtLocation As text:
+        BorderColor: =RGBA(247, 156, 255, 1)
+        Default: =If(tglGPSLocation.Value, Location.Latitude & ","& Location.Longitude)
+        Height: =50
+        HintText: =" “Enter a location or address” "
+        Size: =21
+        Width: =475
+        X: =47
+        Y: =57
+        ZIndex: =4
+
+    drpGoogleMaptypes As dropdown:
+        BorderColor: =RGBA(252, 173, 255, 1)
+        ChevronBackground: =RGBA(205, 139, 252, 1)
+        Height: =42
+        Items: =["roadmap","terrain", "satellite", "hybrid"]
+        Size: =21
+        Width: =327
+        X: =47
+        Y: =154
+        ZIndex: =5
+
+    lblGPSLocation As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =70
+        LineHeight: =1
+        Size: =25
+        Text: |-
+            =" Activate GPS Location:"
+        Width: =560
+        X: =47
+        Y: =1040
+        ZIndex: =7
+
+    slZoom As slider:
+        Default: =15
+        Height: =136
+        Max: =21
+        Min: =1
+        RailFill: =RGBA(255, 255, 255, 1)
+        ValueFill: =RGBA(222, 179, 252, 1)
+        Width: =560
+        X: =47
+        Y: =943
+        ZIndex: =8
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =102
+        Size: =50
+        Text: ="_"
+        Width: =577
+        X: =47
+        Y: =894
+        ZIndex: =9
+
+    Label4_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =65
+        Size: =50
+        Text: ="+"
+        Width: =102
+        X: =538
+        Y: =943
+        ZIndex: =10
+
+    lblGPSLocation_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =70
+        LineHeight: =1
+        Size: =25
+        Text: |-
+            ="Search for a place:"
+        Width: =560
+        X: =47
+        ZIndex: =11
+
+    lblGPSLocation_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Height: =70
+        LineHeight: =1
+        Size: =25
+        Text: |-
+            ="Map type:"
+        Width: =560
+        X: =47
+        Y: =96
+        ZIndex: =12
+
+    tglGPSLocation As toggleSwitch:
+        FalseFill: =RGBA(153, 36, 199, 1)
+        Height: =49
+        Size: =21
+        TrueFill: =RGBA(205, 139, 252, 1)
+        Width: =154
+        X: =413
+        Y: =1050
+        ZIndex: =13
+

@@ -1,0 +1,56 @@
+HomeScreen As screen:
+    Fill: =RGBA(4, 8, 29, 1)
+
+    Image5 As image:
+        Height: =1090
+        Image: ='Oshen design 1'
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        Y: =46
+        ZIndex: =1
+
+    Image4 As image:
+        Height: =353
+        HoverFill: =
+        Image: ='Oshen logo'
+        Width: =349
+        X: =173
+        Y: =46
+        ZIndex: =2
+
+    Label1 As label:
+        Color: =RGBA(64, 0, 255, 1)
+        Font: =Font.'Lato Light'
+        Height: =331
+        LineHeight: =1.8
+        Size: =130
+        Text: ="oshen"
+        Width: =510
+        X: =107
+        Y: =334
+        ZIndex: =3
+
+    Label2 As label:
+        Color: =RGBA(50, 39, 150, 1)
+        Font: =Font.Arial
+        Height: =67
+        Size: =30
+        Text: ="おしん"
+        Width: =210
+        X: =263
+        Y: =598
+        ZIndex: =4
+
+    Start As button:
+        Fill: =RGBA(212, 69, 255, 0.54)
+        Font: =Font.'Lato Light'
+        FontWeight: =FontWeight.Normal
+        Height: =97
+        OnSelect: =Navigate(MainScreen,ScreenTransition.Fade)
+        Size: =50
+        Text: ="Start"
+        Width: =234
+        X: =218
+        Y: =934
+        ZIndex: =5
+
