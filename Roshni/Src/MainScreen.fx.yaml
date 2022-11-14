@@ -3,8 +3,9 @@ MainScreen As screen:
 
     imgMapControl As image:
         Height: =1136
-        Image: |-
-            ="https://maps.googleapis.com/maps/api/staticmap?center=" & EncodeUrl(txtLocation.Text) & "&zoom="& slZoom.Value & "&size=" & txtImageWidth & "x" & txtImageHeight & "&maptype=" & drpGoogleMaptypes.Selected.Value & "&markers=color:purple%7Clabel:O%7C"& EncodeUrl(txtLocation.Text)& "&key="&txtGoogleMapsKey.Text&"&map_id="&txtGoogleMapsID.Text
+        Image: |
+            =
+            "https://maps.googleapis.com/maps/api/staticmap?center=" & EncodeUrl(txtLocation.Text) & "&zoom="& slZoom.Value & "&size=" & txtImageWidth & "x" & txtImageHeight & "&maptype=" & drpGoogleMaptypes.Selected.Value & "&markers=color:purple%7Clabel:O%7C"& EncodeUrl(txtLocation.Text)& "&key="&txtGoogleMapsKey.Text&"&map_id="&txtGoogleMapsID.Text
         ImagePosition: =ImagePosition.Fill
         Width: =640
         ZIndex: =1
